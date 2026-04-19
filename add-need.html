@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Need - AidMatch AI</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard-container form-page-container">
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+            <div class="logo">
+                <a href="index.html" class="back-link" aria-label="Back to Dashboard">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <div class="logo-icon-bg">
+                    <i class="fa-solid fa-hand-holding-heart icon-logo"></i>
+                </div>
+                <h1>AidMatch AI</h1>
+            </div>
+            <div class="header-actions">
+                <div class="user-profile">
+                    <img src="https://i.pravatar.cc/150?img=47" alt="User Avatar" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Sarah Jenkins</span>
+                        <span class="user-role">Administrator</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Form Area -->
+        <main class="dashboard-main form-main">
+            <div class="form-card">
+                <div class="form-header">
+                    <h2><i class="fa-solid fa-hand-holding-medical text-secondary"></i> Add New Need</h2>
+                    <p>Provide details about the assistance required.</p>
+                </div>
+
+                <form class="custom-form" action="index.html">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" placeholder="Describe what is needed (e.g., Medical supplies for 50 people...)" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" id="location" name="location" placeholder="Enter address or location" required>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="index.html" class="btn btn-outline">Cancel</a>
+                        <button type="submit" class="btn btn-secondary">Submit Need</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

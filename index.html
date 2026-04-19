@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AidMatch AI Dashboard</title>
+    <meta name="description" content="Dashboard for AidMatch AI social impact application.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+            <div class="logo">
+                <div class="logo-icon-bg">
+                    <i class="fa-solid fa-hand-holding-heart icon-logo"></i>
+                </div>
+                <h1>AidMatch AI</h1>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-badge"></span>
+                </button>
+                <div class="user-profile">
+                    <img src="https://i.pravatar.cc/150?img=47" alt="User Avatar" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Sarah Jenkins</span>
+                        <span class="user-role">Administrator</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="dashboard-main">
+            <div class="main-header">
+                <div class="greeting">
+                    <h2>Welcome back, Sarah! 👋</h2>
+                    <p>Here's what's happening with AidMatch today.</p>
+                </div>
+                <div class="action-buttons">
+                    <a href="add-need.html" class="btn btn-secondary" style="text-decoration: none;">
+                        <i class="fa-solid fa-hand-holding-medical"></i> Add Need
+                    </a>
+                    <a href="add-volunteer.html" class="btn btn-primary" style="text-decoration: none;">
+                        <i class="fa-solid fa-user-plus"></i> Add Volunteer
+                    </a>
+                </div>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="cards-grid">
+                <!-- Card 1: Total Needs -->
+                <a href="needs-list.html" class="stat-card" style="text-decoration: none; color: inherit;">
+                    <div class="card-icon need-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Total Needs</h3>
+                        <div class="stat-row">
+                            <p class="stat-number">1,245</p>
+                            <span class="stat-trend positive">
+                                <i class="fa-solid fa-arrow-trend-up"></i> +12%
+                            </span>
+                        </div>
+                        <p class="stat-subtitle">Across 14 communities</p>
+                    </div>
+                </a>
+
+                <!-- Card 2: Active Volunteers -->
+                <div class="stat-card">
+                    <div class="card-icon volunteer-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Active Volunteers</h3>
+                        <div class="stat-row">
+                            <p class="stat-number">842</p>
+                            <span class="stat-trend positive">
+                                <i class="fa-solid fa-arrow-trend-up"></i> +5%
+                            </span>
+                        </div>
+                        <p class="stat-subtitle">24 currently online</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Urgent Requests -->
+                <div class="stat-card urgent-card">
+                    <div class="card-icon urgent-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Urgent Requests</h3>
+                        <div class="stat-row">
+                            <p class="stat-number">38</p>
+                            <span class="stat-trend negative">
+                                <i class="fa-solid fa-arrow-trend-down"></i> -2%
+                            </span>
+                        </div>
+                        <p class="stat-subtitle text-danger">Requires immediate attention</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity Area -->
+            <div class="dashboard-content-area">
+                <div class="section-header">
+                    <h3>Recent Matches & Activity</h3>
+                    <a href="needs-list.html" class="btn-text" style="text-decoration: none;">View All</a>
+                </div>
+                <ul class="activity-list">
+                    <li>
+                        <div class="activity-icon match"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <div class="activity-details">
+                            <p><strong>Food donation</strong> successfully matched with <strong>Downtown
+                                    Shelter</strong></p>
+                            <span class="time">10 mins ago</span>
+                        </div>
+                        <div class="activity-status status-completed">Completed</div>
+                    </li>
+                    <li>
+                        <div class="activity-icon new"><i class="fa-solid fa-user-check"></i></div>
+                        <div class="activity-details">
+                            <p>New volunteer <strong>Michael Chen</strong> completed verification</p>
+                            <span class="time">1 hour ago</span>
+                        </div>
+                        <div class="activity-status status-active">Active</div>
+                    </li>
+                    <li>
+                        <div class="activity-icon warning"><i class="fa-solid fa-kit-medical"></i></div>
+                        <div class="activity-details">
+                            <p>Medical supplies urgently requested at <strong>Westside Community Center</strong></p>
+                            <span class="time">3 hours ago</span>
+                        </div>
+                        <div class="activity-status status-pending">Pending</div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
