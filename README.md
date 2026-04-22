@@ -145,10 +145,6 @@ AidMatch-AI/
 
 ---
 
-## 👥 Team
-
-- **[Team Member 1 Name]** - [Role/Contribution] - [GitHub Profile Link]
-- **[Team Member 2 Name]** - [Role/Contribution] - [GitHub Profile Link]
 
 ---
 
