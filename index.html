@@ -52,9 +52,6 @@
                     <a href="add-need.html" class="btn btn-secondary" style="text-decoration: none;">
                         <i class="fa-solid fa-hand-holding-medical"></i> Add Need
                     </a>
-                    <a href="add-volunteer.html" class="btn btn-primary" style="text-decoration: none;">
-                        <i class="fa-solid fa-user-plus"></i> Add Volunteer
-                    </a>
                 </div>
             </div>
 
@@ -77,20 +74,20 @@
                     </div>
                 </a>
 
-                <!-- Card 2: Active Volunteers -->
+                <!-- Card 2: Available Resources -->
                 <div class="stat-card">
-                    <div class="card-icon volunteer-icon">
-                        <i class="fa-solid fa-users"></i>
+                    <div class="card-icon resource-icon">
+                        <i class="fa-solid fa-briefcase-medical"></i>
                     </div>
                     <div class="card-content">
-                        <h3>Active Volunteers</h3>
+                        <h3>Available Resources</h3>
                         <div class="stat-row">
-                            <p class="stat-number">842</p>
+                            <p class="stat-number">450</p>
                             <span class="stat-trend positive">
-                                <i class="fa-solid fa-arrow-trend-up"></i> +5%
+                                <i class="fa-solid fa-check"></i> Ready
                             </span>
                         </div>
-                        <p class="stat-subtitle">24 currently online</p>
+                        <p class="stat-subtitle">Doctors, Teachers, Logistics</p>
                     </div>
                 </div>
 
@@ -112,39 +109,53 @@
                 </div>
             </div>
 
-            <!-- Recent Activity Area -->
+            <!-- Resource Allocation Area -->
             <div class="dashboard-content-area">
                 <div class="section-header">
-                    <h3>Recent Matches & Activity</h3>
+                    <h3>Resource Allocation</h3>
                     <a href="needs-list.html" class="btn-text" style="text-decoration: none;">View All</a>
                 </div>
-                <ul class="activity-list">
-                    <li>
-                        <div class="activity-icon match"><i class="fa-solid fa-handshake-angle"></i></div>
-                        <div class="activity-details">
-                            <p><strong>Food donation</strong> successfully matched with <strong>Downtown
-                                    Shelter</strong></p>
-                            <span class="time">10 mins ago</span>
+                <div class="needs-grid">
+                    <div class="need-card priority-high-border">
+                        <div class="need-card-header">
+                            <div class="header-badges">
+                                <span class="priority-badge priority-high">High</span>
+                                <span class="category-badge"><i class="fa-solid fa-kit-medical"></i> Medical</span>
+                            </div>
                         </div>
-                        <div class="activity-status status-completed">Completed</div>
-                    </li>
-                    <li>
-                        <div class="activity-icon new"><i class="fa-solid fa-user-check"></i></div>
-                        <div class="activity-details">
-                            <p>New volunteer <strong>Michael Chen</strong> completed verification</p>
-                            <span class="time">1 hour ago</span>
+                        <div class="need-card-body">
+                            <p class="need-description">Medical supplies and first aid kits needed for community health camp.</p>
+                            <div class="need-location">
+                                <i class="fa-solid fa-location-dot"></i> Westside Community Center
+                            </div>
                         </div>
-                        <div class="activity-status status-active">Active</div>
-                    </li>
-                    <li>
-                        <div class="activity-icon warning"><i class="fa-solid fa-kit-medical"></i></div>
-                        <div class="activity-details">
-                            <p>Medical supplies urgently requested at <strong>Westside Community Center</strong></p>
-                            <span class="time">3 hours ago</span>
+                        <div class="need-card-footer">
+                            <div class="assigned-resource">
+                                <i class="fa-solid fa-user-doctor"></i> <strong>Assigned:</strong> Dr. Smith (Medical)
+                            </div>
                         </div>
-                        <div class="activity-status status-pending">Pending</div>
-                    </li>
-                </ul>
+                    </div>
+                    
+                    <div class="need-card priority-medium-border">
+                        <div class="need-card-header">
+                            <div class="header-badges">
+                                <span class="priority-badge priority-medium">Medium</span>
+                                <span class="category-badge"><i class="fa-solid fa-truck"></i> Logistics</span>
+                            </div>
+                        </div>
+                        <div class="need-card-body">
+                            <p class="need-description">Transport food donations to the shelter.</p>
+                            <div class="need-location">
+                                <i class="fa-solid fa-location-dot"></i> Downtown Shelter
+                            </div>
+                        </div>
+                        <div class="need-card-footer">
+                            <div class="assigned-resource">
+                                <i class="fa-solid fa-truck-fast"></i> <strong>Assigned:</strong> Delivery Team A
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>

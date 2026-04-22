@@ -329,7 +329,7 @@ body {
     color: var(--secondary);
 }
 
-.volunteer-icon {
+.resource-icon {
     background-color: var(--info-bg);
     color: var(--info);
 }
@@ -834,6 +834,53 @@ body {
     font-size: 13px;
     flex: 1;
     justify-content: center;
+}
+
+/* Allocation and Results Specifics */
+.header-badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.category-badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    background-color: var(--primary-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.assigned-resource {
+    background-color: #f8fafc;
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.assigned-resource i {
+    color: var(--primary);
+    font-size: 16px;
+}
+
+/* Priority Borders */
+.priority-high-border {
+    border-left: 4px solid var(--danger) !important;
+}
+.priority-medium-border {
+    border-left: 4px solid var(--warning) !important;
+}
+.priority-low-border {
+    border-left: 4px solid var(--success) !important;
 }
 
 /* Responsive */
